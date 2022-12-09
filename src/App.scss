@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Alpga Smart 3000';
+  src: url('./assets/AlphaSmart3000.ttf'),
+}
+.bg{
+  position: absolute;
+  background-image: url('./assets/1368.png');
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 500px) {
+    background-size: 250% 100%;
+  }
+}
+.App {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.text {
+  color: #fff;
+  @apply inline-flex w-full justify-center rounded-md;
+  padding-top: 46vh;
+  padding-right: 65px;
+  font-family: 'Alpga Smart 3000';
+  font-size: 74px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 1vh !important;
+    font-size: 50vw*0.27;
+    padding-top: 47vh;
+    padding-right: 60px;
+
+  }
+}
