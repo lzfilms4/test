@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: 'Alpga Smart 3000';
   src: url('./assets/AlphaSmart3000.ttf'),
@@ -11,7 +13,16 @@
   background-size: cover;
   background-position: center;
   @media screen and (max-width: 500px) {
-    background-size: 250% 100%;
+    background-image: url('./assets/375 2.png');
+  }
+  @media screen and (min-width: 3841px) {
+    background-image: url('./assets/3840 1.png');
+  }
+  @media  screen and (max-height: 735px)and (min-width: 700px) {
+    height: 735px;
+  }
+  @media  screen and (max-height: 1400px)and (min-width: 3000px) {
+    height: 1200px;
   }
 }
 .App {
@@ -20,22 +31,43 @@
   width: 100vw;
   background-size: cover;
   background-position: center;
-
+  @media  screen and (max-height: 735px)and (min-width: 700px) {
+    height: 735px;
+  }
+  @media  screen and (max-height: 1400px)and (min-width: 3000px) {
+    height: 1200px;
+  }
 }
 
 .text {
   color: #fff;
   @apply inline-flex w-full justify-center rounded-md;
   padding-top: 46vh;
-  padding-right: 65px;
+  padding-right: 80px;
   font-family: 'Alpga Smart 3000';
-  font-size: 74px;
+  font-size: calc(3.5vh + 3vw);
 
   @media screen and (max-width: 500px) {
-    margin-top: 1vh !important;
-    font-size: 50vw*0.27;
-    padding-top: 47vh;
-    padding-right: 60px;
+    margin-top: 11vh !important;
+    padding-left: 40vw;
+    font-size: calc(3vh + 5vw);
 
+  }
+  @media screen and (max-height: 700px) and (max-width: 500px) {
+    margin-top: 13vh !important;
+  }
+  @media screen and (max-height: 700px) and (min-width: 700px) {
+    margin-top: 4vh !important;
+    font-size: calc(4vh + 4vw);
+  }
+  /*@media screen and (ьшт-height: 700px) and (min-width: 700px) {
+    margin-top: 4vh !important;
+    font-size: calc(4vh + 4vw);
+  }*/
+  @media  screen and (max-height: 735px) and (min-width: 700px) {
+    padding-top: 310px;
+  }
+  @media  screen and (max-height: 1400px)and (min-width: 3000px) {
+    padding-top: 550px;
   }
 }

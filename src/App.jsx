@@ -6,13 +6,14 @@ import Countdown from 'react-countdown';
 
 import "./App.scss";
 
-const renderer = ({ hours, minutes, seconds, completed }) => {
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
-        // Render a completed state
-        return "asd";
+        return <span> </span>;
     } else {
-        // Render a countdown
-        return <span>0{hours}:{minutes}:{seconds}</span>
+        return <span>
+            {days/10>1? '' : '0'}{days}
+            :{hours/10>1? '' : '0'}{hours}
+            :{minutes/10>1? '' : '0'}{minutes}</span>
     }
 };
 function App() {
@@ -20,18 +21,11 @@ function App() {
     <div className="App">
         <div className='bg'></div>
       <div className="text">
-          {/*<Countdown*/}
-          {/*    date={Date.now()+ 1671524170}*/}
-          {/*    intervalDelay={0}*/}
-          {/*    renderer={renderer}*/}
-          {/*/>*/}
-
-          <div id='day'>09</div>
-          <div id='dh'>:</div>
-          <div id='hour'>22</div>
-          <div id='hm'>:</div>
-          <div id='min'>22</div>
-
+          <Countdown
+              date={'2022-12-20T01:02:03'}
+              renderer={renderer}
+              zeroPadDays={4}
+          />
       </div>
     </div>
   );
