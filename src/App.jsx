@@ -17,7 +17,7 @@ function App() {
         <div className='bg'></div>
       <div className="text">
           <Countdown
-              date={'2022-12-20T01:02:03'}
+              date={'2022-12-21T20:01:01'}
               renderer={renderer}
               zeroPadDays={4}
           />
