@@ -63,21 +63,30 @@
     padding-left: 40vw;
   }
   @media screen and (max-height: 880px) and (max-width: 500px) {
-    margin-top: 11vh !important;
+    margin-top: 12vh !important;
   }
-
-  @media screen and (max-height: 735px) and (min-width: 700px) {
-    margin-top: 4vh !important;
+  @media screen and (max-height: 440px) and (max-width: 500px) {
+    margin-top: 14vh !important;
+  }
+  /*@media screen and (max-height: 735px) and (min-width: 701px) {
+    margin-top: 100vh !important;
+    font-size: calc(4vh + 4vw);
+  }*/
+  @media screen and (max-height: 734px) and (min-width: 700px) and (max-width: 765px) {
+    margin-top: 11vh !important;
     font-size: calc(4vh + 4vw);
   }
   @media  screen and (max-height: 765px) and (min-width: 700px) {
-    padding-top: 320px;
-    //margin-top: 10vh !important;
+    padding-top: 350px;
+    font-size: 60px !important;
 
+  }
+  @media  screen and (max-height: 765px) and (max-width: 765px) and (min-height: 520px) and (min-width: 376px) {
+    margin-top: 50px !important;
   }
   @media  screen and (max-height: 800px) and (max-width: 750px) and (min-width: 500px) {
     //font-size: calc(4vh + 4.5vw);
-    margin-top: 9vh !important;
+    margin-top: 7vh !important;
   }
   @media  screen and (min-height: 800px) and (max-width: 750px) and (min-width: 500px) {
     //font-size: calc(4vh + 4.5vw);
