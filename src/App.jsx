@@ -1,9 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import bg from "./assets/react.svg";
-
 import Countdown from 'react-countdown';
-
 import "./App.scss";
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -11,9 +6,9 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
         return <span> </span>;
     } else {
         return <span>
-            {days/10>1? '' : '0'}{days}
-            :{hours/10>1? '' : '0'}{hours}
-            :{minutes/10>1? '' : '0'}{minutes}</span>
+            {days/10>=1? '' : '0'}{days}
+            :{hours/10>=1? '' : '0'}{hours}
+            :{minutes/10>=1? '' : '0'}{minutes}</span>
     }
 };
 function App() {

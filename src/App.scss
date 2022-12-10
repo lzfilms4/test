@@ -1,30 +1,8 @@
-
-
 @font-face {
   font-family: 'Alpga Smart 3000';
-  src: url('./assets/AlphaSmart3000.ttf'),
+  src: url('./assets/fonts/AlphaSmart3000.ttf'),
 }
-.bg{
-  position: absolute;
-  background-image: url('./assets/1368.png');
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
-  @media screen and (max-width: 500px) {
-    background-image: url('./assets/375 2.png');
-  }
-  @media screen and (min-width: 3841px) {
-    background-image: url('./assets/3840 1.png');
-  }
-  @media  screen and (max-height: 735px)and (min-width: 700px) {
-    height: 735px;
-  }
-  @media  screen and (max-height: 1400px)and (min-width: 3000px) {
-    height: 1200px;
-  }
-}
+
 .App {
   position: absolute;
   height: 100vh;
@@ -39,8 +17,33 @@
   }
 }
 
+.bg{
+  position: absolute;
+  background-image: url('./assets/img/1368.png');
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 500px) {
+    background-image: url('./assets/img/375 2.png');
+  }
+  @media screen and (max-width: 768px) and (min-width: 501px) {
+    background-image: url('./assets/img/768 2.png');
+  }
+  @media screen and (min-width: 3841px) {
+    background-image: url('./assets/img/3840 1.png');
+  }
+  @media  screen and (max-height: 735px)and (min-width: 700px) {
+    height: 735px;
+  }
+  @media  screen and (max-height: 1400px)and (min-width: 3000px) {
+    height: 1400px;
+  }
+}
+
 .text {
-  color: #fff;
+  color: #FDE4B1;
   @apply inline-flex w-full justify-center rounded-md;
   padding-top: 46vh;
   padding-right: 80px;
@@ -51,23 +54,50 @@
     margin-top: 11vh !important;
     padding-left: 40vw;
     font-size: calc(3vh + 5vw);
+  }
+  @media screen and (max-width: 768px) and (min-width: 501px) {
+    margin-top: 5vh !important;
+    padding-left: 40vw;
+  }
+  @media screen and (max-width: 768px) and (min-width: 501px) and (max-height: 736px) {
+    padding-left: 40vw;
+  }
+  @media screen and (max-height: 880px) and (max-width: 500px) {
+    margin-top: 11vh !important;
+  }
+
+  @media screen and (max-height: 735px) and (min-width: 700px) {
+    margin-top: 4vh !important;
+    font-size: calc(4vh + 4vw);
+  }
+  @media  screen and (max-height: 765px) and (min-width: 700px) {
+    padding-top: 320px;
+    //margin-top: 10vh !important;
 
   }
-  @media screen and (max-height: 700px) and (max-width: 500px) {
-    margin-top: 13vh !important;
+  @media  screen and (max-height: 800px) and (max-width: 750px) and (min-width: 500px) {
+    //font-size: calc(4vh + 4.5vw);
+    margin-top: 9vh !important;
   }
-  @media screen and (max-height: 700px) and (min-width: 700px) {
-    margin-top: 4vh !important;
-    font-size: calc(4vh + 4vw);
+  @media  screen and (min-height: 800px) and (max-width: 750px) and (min-width: 500px) {
+    //font-size: calc(4vh + 4.5vw);
+    margin-top: 7vh !important;
   }
-  /*@media screen and (ьшт-height: 700px) and (min-width: 700px) {
-    margin-top: 4vh !important;
-    font-size: calc(4vh + 4vw);
-  }*/
-  @media  screen and (max-height: 735px) and (min-width: 700px) {
-    padding-top: 310px;
+  @media  screen and (max-width: 1000px) and (min-width: 768px) {
+    font-size: calc(6vh + 2vw);
+  }
+
+  @media  screen and (min-width: 1000px) and (max-width: 1500px) {
+    font-size: calc(6vh + 2vw);
   }
   @media  screen and (max-height: 1400px)and (min-width: 3000px) {
-    padding-top: 550px;
+    padding-top: 650px;
+    font-size: calc(3vh + 4vw);
+  }
+  @media screen and (min-width: 3000px) {
+    padding-right: 200px;
+  }
+  @media screen and (min-width: 1500px) and (max-width: 2000px) {
+    font-size: calc(4vh + 3vw);
   }
 }
